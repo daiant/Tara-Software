@@ -6,18 +6,14 @@ import ReactPlayer from "react-player/lazy";
 export default function Movie({ movieData }) {
     return (
         <Layout>
-            {/* <video controls width="250">
-                <source src={"/video/"+movieData.id+'.mp4'}
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-                </source>
-            </video> */}
-            <ReactPlayer 
-                src={'video/' + movieData.id + '.mp4'}
-                width='100%'
-                height='100%'
-                controls={true}
-                />
+            <div style={{width: '100%'}}>
+                <video controls style={{display: 'block', margin: '0 auto'}}>
+                    <source src={"/video/"+movieData.id+'.mp4'}
+                            type="video/mp4">
+                    </source>
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
         </Layout>
     )
 }

@@ -8,14 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next-auth/prisma-adapter": "^0.5.3",
+    "@prisma/client": "^2.28.0",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^11.0.0",
+    "next-auth": "^3.27.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-player": "^2.9.0",
     "reactjs-media": "^1.5.1",
     "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+    "remark-html": "^13.0.1",
+    "serverless-mysql": "^1.5.4",
+    "swr": "^0.5.6"
+  },
+  "devDependencies": {
+    "prisma": "^2.28.0"
   }
 }
